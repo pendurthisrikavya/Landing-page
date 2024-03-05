@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Klash Bags</title>
+    <style>
+      :root {
+        --primary-color: #8aa5bb;
+        --primary-color-dark: #141420;
+        --secondary-color: #ff97ba;
+        --white: #ffffff;
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      a {
+        text-decoration: none;
+      }
+
+      body {
+        font-family: "Montserrat", sans-serif;
+        background-color: var(--primary-color);
+        overflow-x: hidden;
+      }
+
+      .header__container {
+        position: relative;
+        max-width: 1200px;
+        margin: auto;
+        padding: 1rem;
+      }
+
+      nav {
+        padding: 1rem 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      .nav__logo a {
+        font-size: 1.75rem;
+        font-weight: 700;
+        color: #ffffff;
+        display: flex;
+        align-items: center; 
+        gap: 0.5rem; 
+      }
+
+      .nav__links {
+        list-style: none;
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+      }
+      
+      .link {
+        margin-right: 2.8rem; 
+      }
+
+      .link a {
+        position: relative;
+        padding-bottom: 5px;
+        font-size: 1.2rem;
+        font-weight: 600;
+        color: var(--primary-color-dark);
+      }
+
+      .link a::after {
+        position: absolute;
+        content: "";
+        width: 0;
+        height: 2px;
+        bottom: 0;
+        left: 0;
+        background-color: var(--secondary-color);
+        transition: 0.3s;
+      }
+
+      .link a:hover::after {
+        width: 100%;
+      }
+
+      .header__content {
+        padding: 5rem 0;
+      }
+
+      h1 {
+        font-family: "Cursive";
+        font-size: 9rem;
+        font-weight: 700;
+        color: var(--white);
+      }
+
+      h2 {
+        margin-bottom: 2rem;
+        font-size: 3rem;
+        font-weight: 700;
+        color: var(--white);
+      }
+
+      .banner__1 {
+        max-width: 400px;
+        margin-left: 5rem;
+        padding: 2rem;
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: var(--primary-color-dark);
+        background-color: #ffffdd;
+      }
+
+      .btn {
+        display: inline-block;
+        padding: 1rem 3rem;
+        outline: none;
+        border: none;
+        font-size: 2rem;
+        font-weight: 700;
+        color: var(--white);
+        background-color: #c2b2d4;
+        cursor: pointer;
+      }
+
+      .header__image {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: calc(50% - 5rem);
+        padding-top: 6rem;
+        background-color: var(--white);
+        z-index: -1;
+        overflow: hidden;
+      }
+
+      .header__image img {
+        width: 100%;
+        display: flex;
+        max-width: 600px;
+      }
+
+      .header__socials {
+        right: 0;
+        top: 50%;
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+      }
+
+      .header__socials span a {
+        font-size: 2rem;
+        color: #000000;
+        transition: 0.3s;
+      }
+
+      .header__socials span:hover a {
+        color: #000000;
+      }
+
+      .types__container {
+        background-color: #000000;
+      }
+
+      .types__grid {
+        max-width: 1200px;
+        margin: auto;
+        padding: 2rem 1rem;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+      }
+
+      .types__card {
+        padding: 1rem;
+        display: flex;
+        align-items: flex-start;
+        gap: 1rem;
+      }
+
+      .types__card h4 {
+        font-size: 3rem;
+        color: var(--white);
+      }
+
+      .types__card p {
+        padding-bottom: 1rem;
+        color: var(--white);
+        border-bottom: 5px solid var(--primary-color);
+      }
+    </style>
+  </head>
+  <body>
+    <header class="header__container">
+      <nav>
+        <div class="nav__logo">
+          <a href="#">
+            <i class="ri-search-line"></i> Search
+            <i class="ri-shopping-bag-line" style="margin-left: 0.5rem;"></i>
+          </a>
+        </div>
+        <ul class="nav__links">
+          <li class="link"><a href="#">Home</a></li>
+          <li class="link"><a href="#">New Arrivals</a></li>
+          <li class="link"><a href="#">Know Us</a></li>
+          <li class="link"><a href="#">Contact Us</a></li>
+        </ul>
+      </nav>
+      <div class="header__content">
+        <h1>Klash</h1>
+        <h2>it's more than a bag</h2>
+        <div class="banner__1">
+          Be part of an elite few with our limited edition bags.
+        </div>
+        <button class="btn">Buy Now</button>
+      </div>
+      <div class="header__image">
+        <img src="klashbags.png" alt="header" />
+      </div>
+      <div class="header__socials">
+        <span>
+          <a href="#"><i class="ri-instagram-line"></i></a>
+        </span>
+        <span>
+          <a href="#"><i class="ri-facebook-box-fill"></i></a>
+        </span>
+        <span>
+          <a href="#"><i class="ri-twitter-fill"></i></a>
+        </span>
+        <span>
+          <a href="#"><i class="ri-youtube-fill"></i></a>
+        </span>
+      </div>
+    </header>
+    <section class="types__container">
+      <div class="types__grid">
+        <div class="types__card">
+          <h4>1.</h4>
+          <p>
+            Discover our exquisite collection of vegan bags – no animals harmed in the making of our products.
+          </p>
+        </div>
+        <div class="types__card">
+          <h4>2.</h4>
+          <p>
+            Smart designs that adapt to your lifestyle – discover the latest in bag technology.
+          </p>
+        </div>
+        <div class="types__card">
+          <h4>3.</h4>
+          <p>
+            Experience unmatched customer service and satisfaction with every purchase.
+          </p>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
